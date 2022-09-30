@@ -11,16 +11,23 @@
   --a-color-black: #000000;
   --a-color-white: #ffffff;
   --team-bg-color: #f5f4fa;
+  --button-hov-foc-color: #188ce8;
+  --button-color-white: #ffffff;
+  --btn-bgc-portfolio: #f5f4fa;
+  --footer-hero-background-color: #2f303a;
+  --footer-color-contact: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--a-color-white);
+  color: var(--ptimary-text-color);
 }
 
-.header {
+/* .header {
   background-color: #ffffff;
-}
+} */
 
 .list {
   list-style: none;
@@ -29,7 +36,6 @@ body {
 
 .portfolio-h1,
 .description-h2 {
-  color: #ffffff;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,10 +52,12 @@ body {
 /* decor header */
 .logo-header {
   font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  color: #000000;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  text-decoration: none;
+  color: var(--a-color-black);
 }
 
 .logo-web {
@@ -57,19 +65,31 @@ body {
 }
 
 .site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   text-decoration: none;
   color: var(--title-text-color);
 }
 .contact-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   text-decoration: none;
-  color: var(--ptimary-text-color);
+  color: inherit;
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.address-item .effect:hover,
+.address-item .effect:focus {
   color: var(--accent-color);
 }
 
@@ -79,6 +99,9 @@ body {
 }
 
 /* decor Hero */
+.hero {
+  background-color: var(--footer-hero-background-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -88,15 +111,41 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* color: var(--a-color-white); */
+  color: var(--a-color-white);
 }
 
 .hero-button {
   font-family: inherit;
-  background: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px; */
-  color: #ffffff;
+  color: var(--button-color-white);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--button-hov-foc-color);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; */
+  color: var(--button-color-white);
   cursor: pointer;
 }
 
@@ -129,6 +178,12 @@ body {
 }
 
 /* decor Team */
+.team-item {
+  background: var(--a-color-white);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px; */
+}
 .team {
   background: var(--team-bg-color);
 }
@@ -149,32 +204,32 @@ body {
 
 /* decor Footer */
 .footer {
-  background: #2f303a;
-  color: #ffffff;
-  font-size: 14;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  background: var(--footer-hero-background-color);
 }
 
-.list-address a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.list-mail a,
-.list-phone a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
+.item-address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
 
-.list-mail,
-.list-phone {
-  margin-top: 9px;
+  text-decoration: none;
+  color: var(--a-color-white);
+}
+.item-mail,
+.item-phone {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+
+  text-decoration: none;
+  color: var(--footer-color-contact);
 }
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--a-color-white);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -183,8 +238,15 @@ body {
 /* decor Portfolio */
 
 .portfolio-button {
-  background: #f5f4fa;
-  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  background-color: var(--btn-bgc-portfolio);
+  border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -201,7 +263,7 @@ body {
   cursor: pointer;
 }
 
-.portfolio-item a {
+.portfolio-link {
   text-decoration: none;
 }
 .portfolio-title {

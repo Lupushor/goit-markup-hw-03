@@ -10,11 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
+      <nav>
         <a href="/" class="logo-header"><span class="logo-web">Web</span>Studio</a>
         <ul class="site-nav list">
           <li><a href="./index.html" class="link">Студія</a></li>
@@ -35,7 +35,7 @@
 
     <main>
       <section class="portfolio">
-        <h1 class="portfolio-h1" lang="en">portfolio</h1>
+        <h1 class="portfolio-h1">portfolio</h1>
         <ul class="portfolio-list-button list">
           <li class=""><button type="button" class="portfolio-button">Усі</button></li>
           <li class=""><button type="button" class="portfolio-button">Веб-сайти</button></li>
@@ -45,9 +45,9 @@
         </ul>
         <ul class="portfolio-list list">
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_1.jpg"
+                src="./images/portfolio_jpeg_1.jpg"
                 alt="Фото ноутбука з відкритим сайтом"
                 width="370"
                 height="294"
@@ -61,9 +61,9 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_2.jpg"
+                src="./images/portfolio_jpeg_2.jpg"
                 alt="Фото граючих баскетболистів"
                 width="370"
                 height="294"
@@ -79,9 +79,9 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_3.jpg"
+                src="./images/portfolio_jpeg_3.jpg"
                 alt="Фото бренда Seafood"
                 width="370"
                 height="294"
@@ -95,9 +95,9 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_4.jpg"
+                src="./images/portfolio_jpeg_4.jpg"
                 alt="Фото навушників"
                 width="370"
                 height="294"
@@ -111,8 +111,13 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
-              <img src="./img/portfolio_jpeg_5.jpg" alt="Фото коробок" width="370" height="294" />
+            <a href="#" class="portfolio-link">
+              <img
+                src="./images/portfolio_jpeg_5.jpg"
+                alt="Фото коробок"
+                width="370"
+                height="294"
+              />
               <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="portfolio-text">Додаток</p>
               <!-- <p>
@@ -122,9 +127,9 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_6.jpg"
+                src="./images/portfolio_jpeg_6.jpg"
                 alt="Фото монитора Apple"
                 width="370"
                 height="294"
@@ -138,9 +143,9 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
+            <a href="#" class="portfolio-link">
               <img
-                src="./img/portfolio_jpeg_7.jpg"
+                src="./images/portfolio_jpeg_7.jpg"
                 alt="Фото відкритої книги"
                 width="370"
                 height="294"
@@ -154,8 +159,8 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
-              <img src="./img/portfolio_jpeg_8.jpg" alt="Фото бирки" width="370" height="294" />
+            <a href="#" class="portfolio-link">
+              <img src="./images/portfolio_jpeg_8.jpg" alt="Фото бирки" width="370" height="294" />
               <h2 class="portfolio-title">Проєкт <span lang="en">LAB</span></h2>
               <p class="portfolio-text">Маркетинг</p>
               <!-- <p>
@@ -165,8 +170,13 @@
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="#">
-              <img src="./img/portfolio_jpeg_9.jpg" alt="Фото ноутбука" width="370" height="294" />
+            <a href="#" class="portfolio-link">
+              <img
+                src="./images/portfolio_jpeg_9.jpg"
+                alt="Фото ноутбука"
+                width="370"
+                height="294"
+              />
               <h2 lang="en" class="portfolio-title">Growing Business</h2>
               <p class="portfolio-text">Додаток</p>
               <!-- <p>
@@ -181,20 +191,21 @@
     <footer class="footer">
       <a href="/" class="logo-footer"> <span class="logo-web">Web</span>Studio </a>
       <address class="address">
-        <ul class="list">
-          <li class="list-address">
+        <ul class="address-list list">
+          <li class="address-item">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="item-address effect"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li class="list-mail">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="address-item">
+            <a href="mailto:info@devstudio.com" class="item-mail effect">info@devstudio.com</a>
           </li>
-          <li class="list-phone">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="address-item">
+            <a href="tel:+380961111111" class="item-phone effect">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
