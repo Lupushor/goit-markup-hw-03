@@ -25,9 +25,29 @@ body {
   color: var(--ptimary-text-color);
 }
 
-/* .header {
-  background-color: #ffffff;
-} */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
 
 .list {
   list-style: none;
@@ -49,7 +69,21 @@ body {
   overflow: hidden;
 }
 
+.section {
+  margin-top: 94px;
+  /* margin-bottom: 94px; */
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
+}
+
 /* decor header */
+
 .logo-header {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -72,8 +106,13 @@ body {
 
   text-decoration: none;
   color: var(--title-text-color);
+
+  /* padding: 10px; */
 }
+
 .contact-nav .link {
+  display: inline-block;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,13 +140,13 @@ body {
 /* decor Hero */
 .hero {
   background-color: var(--footer-hero-background-color);
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -115,6 +154,11 @@ body {
 }
 
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -124,8 +168,7 @@ body {
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   color: var(--button-color-white);
   cursor: pointer;
 }
@@ -150,8 +193,13 @@ body {
 }
 
 /* decor Description */
+/* .description-list {
+  display: flex;
+  justify-content: space-around;
+} */
 
 .description-title {
+  margin: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -168,8 +216,10 @@ body {
 }
 
 /* decor Direction */
+
 .direction-title,
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -178,16 +228,28 @@ body {
 }
 
 /* decor Team */
-.team-item {
-  background: var(--a-color-white);
-
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px; */
-}
 .team {
   background: var(--team-bg-color);
 }
+
+.team-list {
+  /* display: flex;
+  justify-content: space-around; */
+  padding-bottom: 94px;
+}
+.team-title {
+  padding-top: 94px;
+}
+.team-item {
+  background: var(--a-color-white);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
+}
+
 .team-member-name {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -196,6 +258,8 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 .team-function {
+  margin-top: 10px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -203,10 +267,18 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 /* decor Footer */
+.container > a {
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 .footer {
   background: var(--footer-hero-background-color);
 }
 
+.address {
+  padding-bottom: 60px;
+}
 .item-address {
   font-size: 14px;
   font-style: normal;
@@ -236,7 +308,15 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 /* decor Portfolio */
+.portfolio {
+  padding-bottom: 94px;
+}
+.portfolio-list-button {
+  /* display: flex;
+  justify-content: center; */
 
+  margin-bottom: 34px;
+}
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -263,10 +343,15 @@ border-radius: 0px 0px 4px 4px; */
   cursor: pointer;
 }
 
+.portfolio-list {
+}
+
 .portfolio-link {
   text-decoration: none;
 }
 .portfolio-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -277,6 +362,7 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 .portfolio-text {
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
 
