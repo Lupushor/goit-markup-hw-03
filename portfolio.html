@@ -20,22 +20,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
+    <header class="header portfolio-header">
+      <div class="container main-nav">
+        <nav class="site-nav">
           <a href="/" class="logo-header"><span class="logo-web">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
+          <ul class="nav-list list">
+            <li class="nav-item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="nav-item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="contact-nav list">
-          <li>
+          <li class="con-nav-item">
             <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="con-nav-item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -46,12 +46,22 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="portfolio-h1">portfolio</h1>
-          <ul class="portfolio-list-button list">
-            <li class=""><button type="button" class="portfolio-button">Усі</button></li>
-            <li class=""><button type="button" class="portfolio-button">Веб-сайти</button></li>
-            <li class=""><button type="button" class="portfolio-button">Додатки</button></li>
-            <li class=""><button type="button" class="portfolio-button">Дизайн</button></li>
-            <li class=""><button type="button" class="portfolio-button">Маркетинг</button></li>
+          <ul class="portfolio-list-btn list">
+            <li class="portfolio-item-btn">
+              <button type="button" class="portfolio-btn">Усі</button>
+            </li>
+            <li class="portfolio-item-btn">
+              <button type="button" class="portfolio-btn">Веб-сайти</button>
+            </li>
+            <li class="portfolio-item-btn">
+              <button type="button" class="portfolio-btn">Додатки</button>
+            </li>
+            <li class="portfolio-item-btn">
+              <button type="button" class="portfolio-btn">Дизайн</button>
+            </li>
+            <li class="portfolio-item-btn">
+              <button type="button" class="portfolio-btn">Маркетинг</button>
+            </li>
           </ul>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
@@ -62,8 +72,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -78,10 +90,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -96,8 +110,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -112,8 +128,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -128,8 +146,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -144,8 +164,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 lang="en" class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="img-description">
+                  <h2 lang="en" class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -160,8 +182,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -176,8 +200,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт <span lang="en">LAB</span></h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="img-description">
+                  <h2 class="portfolio-title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -192,8 +218,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 lang="en" class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="img-description">
+                  <h2 lang="en" class="portfolio-title">Growing Business</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
                 <!-- <p>
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
