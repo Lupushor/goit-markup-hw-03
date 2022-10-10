@@ -371,6 +371,7 @@ img {
 }
 
 /* decor Portfolio */
+
 .portfolio-header {
   border-bottom: 1px solid var(--border-color-portfolio);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.08),
@@ -446,7 +447,6 @@ img {
   text-decoration: none;
 }
 .portfolio-title {
-  margin-top: 20px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -458,7 +458,6 @@ img {
 }
 
 .portfolio-text {
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
 
